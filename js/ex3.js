@@ -1,15 +1,33 @@
-const values = [3,11,7,2,9,10]
-
-function accumulate(values)
+//Declare studentList Array
+const studentList = [
     {
-        let sum = 0;
-        for(let i = 0; i < values.length; i++)
-        {
-            sum = sum + values[i];
-        }
-        return sum;
-    }
-
-console.log("Sum of all arrays = ", accumulate(values));
-console.log("Min = ", Math.min(...values));
-console.log("Max = ", Math.max(...values));
+        firstName: "Allan",
+        lastName: "Able",
+        scores: [95, 85, 92, 98]
+    },
+    {
+        firstName: "Amy",
+        lastName: "Alexander",
+        scores: [80, 88, 100]
+    },
+    {
+        firstName: "Betty",
+        lastName: "Barns",
+        scores: [70, 80, 90, 100]
+    },
+    {
+        firstName: "Bob",
+        lastName: "Bones",
+        scores: [75, 85, 95, 85]
+    },
+    {
+        firstName: "Cindy",
+        lastName: "Chase",
+        scores: [95, 90, 92, 98]
+    },
+    {
+        firstName: "Charles",
+        lastName: "Chips",
+        scores: [88, 99, 90]
+    },
+];
