@@ -59,7 +59,7 @@ const studentList=[
     scores:[88,99,90]
     
     },
-    
+    //define classNameResults and their param
     ]
     
     cLastNameResults = studentList.filter((studentLi) => studentLi.lastName.startsWith("C")).map(studentLi=> ({ ...studentLi, minScore: studentLi.scores.reduce(function (p, v) {
