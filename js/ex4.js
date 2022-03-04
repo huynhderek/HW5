@@ -1,15 +1,5 @@
-let arr = [1,2,3,4,5,6,7,8,9,10];
-let odd = arr.filter(num => num % 2 != 0); //odd numbers only
-let even = arr.filter(num => num % 2 === 0);  // filter out elements not divisible by 2 == that are odd
-let div_by_2or5 = arr.filter(num => (num % 2 == 0) || (num % 5 == 0));  // filter out number divisible by 2 or 5
-let div_by_3_squared = arr.filter(num => num % 3 == 0).map(num => num * num);   // filter out numbers divisible by 3, and then square them
-let sum_sqrs_num_div_by_5 = arr.filter(num => num % 5 == 0).map(num => num * num).reduce((a, b) => a+b);    // filter out numbers divisible by 5, then square them, then add them
+const anArray = [1,2,3,4,5,6,7,8,9,10];
 
-
-console.log('Original Array: ', arr);
-console.log('Odd numbers: ', odd);
-console.log('Even numbers: ', even);
-console.log('Numbers divisible by 2 or 5: ', div_by_2or5);
-console.log('square of Numbers divisible by 3:', div_by_3_squared);
-console.log('Sum of squares of numbers divisible by 5: ', sum_sqrs_num_div_by_5);
-
+console.log(anArray.filter(value => value % 2 === 0).map(x => x *2));
+console.log(anArray.map(x => x * 2).filter(value => value % 2 === 0));
+console.log(anArray.reduce((x, sum) => sum + x, 0));
